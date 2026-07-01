@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Loom - stories woven together, judged by consensus</title>
+<meta name="description" content="Collaborative micro-stories on GenLayer. Anyone weaves the next line; a validator set reads the whole strand and crowns the single best continuation, on-chain forever." />
+<link rel="stylesheet" href="./styles.css?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://rsms.me/"><link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <a class="brand" href="#"><span class="loom-mark"><i class="ph-fill ph-needle"></i></span> Loom</a>
+    <span class="tag">stories woven together - judged by consensus</span>
+    <span id="walletslot"><button class="btn ghost" id="connectBtn"><i class="ph-bold ph-wallet"></i> Connect</button></span>
+  </header>
+
+  <div class="body">
+    <!-- LEFT: strand list -->
+    <aside class="sidebar">
+      <div class="side-head">
+        <span class="side-title">Strands</span>
+        <button class="newbtn" id="newToggle"><i class="ph-bold ph-plus"></i> New</button>
+      </div>
+      <div class="new-composer" id="newComposer" hidden>
+        <textarea id="premiseInput" maxlength="200" placeholder="Set a premise. One vivid sentence to weave from…"></textarea>
+        <div class="nc-row"><span class="nc-hint" id="premiseCount">0 / 200</span>
+          <button class="btn primary sm" id="startStrand"><i class="ph-bold ph-sparkle"></i> Start strand</button></div>
+      </div>
+      <div class="strand-list" id="strandList"><div class="side-loading">Loading strands…</div></div>
+    </aside>
+
+    <!-- RIGHT: thread -->
+    <main class="thread" id="thread">
+      <div class="thread-empty">Select a strand to read it.</div>
+    </main>
+  </div>
+</div>
+
+<div id="log"></div>
+<script type="module" src="./app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "project": "24-loom",
+  "name": "Loom",
+  "network": "testnetBradbury",
+  "chainId": 4221,
+  "rpc": "https://rpc-bradbury.genlayer.com",
+  "explorer": "https://explorer-bradbury.genlayer.com",
+  "contractAddress": "0x5fcB086587Ac6741Dd0dec5AEeDfcda1460c6Da5",
+  "deployTxHash": "0x55a7e51c3091640ee6316df17cbb29839731582949884601c11cb2c22e5bd6d0",
+  "contractExplorer": "https://explorer-bradbury.genlayer.com/address/0x5fcB086587Ac6741Dd0dec5AEeDfcda1460c6Da5",
+  "deployer": "0xdAa923b817C6116f2463957542FB29F6Ba671FE8",
+  "deployedAt": "2026-07-01T15:53:12.275Z",
+  "statusName": 5,
+  "smoke": {}
+}
